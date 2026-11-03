@@ -7,6 +7,7 @@
 ## ファイル構成
 - linux-commands.md：Linuxコマンドの早見表
 - bandit.md：OverTheWire Bandit の解き方メモ
+- python/：Pythonの練習コードと作品
 
 ## 学習ログ
 - 2026/10/30
@@ -19,14 +20,17 @@
   - `.` `..` `~` の意味、Tab補完を覚えた
   - 隠しファイル（ls -a）、file コマンド、ワイルドカード（*）を覚えた
 - 2026/11/01
-  - Bandit Level 5〜6 クリア（Level 7 到達）
+  - Bandit Level 5〜6 クリア
   - find（条件でファイルを探す）、man（説明書）を覚えた
   - エラーを消す 2>/dev/null を知った
   - 第1週の目標（Level 5）を前倒しで達成
 - 2026/11/02
-  - Bandit Level 7〜9 クリア（Level 10 到達）
-  - grep（ファイルの中の文字を探す）を覚えた
-  - sort、uniq、strings を覚えた
+  - Bandit Level 7〜9 クリア
+  - grep、sort、uniq、strings を覚えた
   - パイプ | でコマンドをつなぐ方法を覚えた
   - Pythonを始めた（print、変数、計算、f文字列）
   - 初めてのプログラム intro.py を作った
+- 2026/11/03
+  - Bandit Level 10〜12 クリア（Level 13 到達）
+  - base64、ROT13（tr）、hexdump（xxd）、圧縮ファイルの解凍を学んだ
+  - > でファイルを空にしてしまう失敗をして、原因を理解した

@@ -107,3 +107,20 @@ ssh bandit数字@bandit
   - > は先にファイルを空にする。成功しても失敗しても中身が消える
   - gzip -d は自動でファイルを作るので > はいらない
   - 名前ではなく file で中身を見て判断する
+
+## Level 13 → 14
+- 目標：パスワードの代わりに秘密鍵（sshkey.private）でbandit14にログインする
+- 手順：
+  1. scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private ~/practice/bandit14.key
+  2. chmod 600 で自分だけ読めるようにする
+  3. ssh -i 鍵ファイル bandit14@bandit.labs.overthewire.org -p 2220
+  4. cat /etc/bandit_pass/bandit14 でパスワードを取る
+- 失敗したこと：
+  - 鍵をコピペしたら invalid format で使えなかった
+  - 自分のMacで cat /etc/bandit_pass/bandit14 を打ってしまった
+- 学んだこと：
+  - 秘密鍵＝自分だけが持つ鍵、公開鍵＝サーバー側の鍵穴
+  - 鍵は1文字違うと使えない → scp でファイルごと運ぶ
+  - ssh は小文字 -p、scp は大文字 -P
+  - エラーメッセージの大事な1行（invalid format）から原因がわかる
+  - コマンドを打つ前にプロンプトで「どこにいるか」を確認する

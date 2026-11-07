@@ -8,6 +8,7 @@
 - linux-commands.md：Linuxコマンドの早見表
 - bandit.md：OverTheWire Bandit の解き方メモ
 - python/：Pythonの練習コードと作品
+- log-analyzer/ :ログ解析ツール（作成中）
 
 ## 学習ログ
 - 2026/10/30
@@ -38,3 +39,7 @@
   - Bandit Level 13 クリア（Level 14 到達）
   - 秘密鍵でのsshログイン、scp、chmod を覚えた
   - 鍵をコピペして壊してしまい、scp でファイルごと運ぶ方法で解決した
+   - ログ解析ツール（武器③）を始めた：段階①〜③
+    - open() でファイルを読み、成功・失敗の回数を数えた
+    - else ではなく elif にして、関係ない行を数えないようにした
+    - split() と index("from") で、失敗した行からIPアドレスを取り出した

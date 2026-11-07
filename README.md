@@ -9,6 +9,7 @@
 - bandit.md：OverTheWire Bandit の解き方メモ
 - python/：Pythonの練習コードと作品
 - log-analyzer/ :ログ解析ツール（作成中）
+- python-notes.md：Pythonの書き方メモ
 
 ## 学習ログ
 - 2026/10/30

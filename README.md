@@ -50,4 +50,7 @@
   - ログ解析ツール 段階④⑤
     - 辞書でIPごとの失敗回数を集計した
     - sorted() と key= で回数の多い順に並べ、[:5] でTOP5を表示した
+  - Bandit Level 14〜15 クリア（Level 16 到達）
+    - nc でポートにつないで通信した
+    - openssl s_client で暗号化通信（SSL/TLS）をした
   - 一番難しかった：辞書のキーと値の関係、sorted の key= の意味
